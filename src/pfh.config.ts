@@ -5,6 +5,9 @@ const PFHConfigIndex = {
         username: "root",
         password: "",
         database: "leon20spr_pfh"
+    },
+    express: {
+        port: 3000
     }
 }
 
