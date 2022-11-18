@@ -27,7 +27,7 @@ class PFHHelpersHandlerTypeORMIndex {
                     this._activeConnection = result;
 
                     await this._activeConnection.synchronize().then(() => {
-                        pfh.helpers.console.log("helpers/utility", "The connection to the database could be established successfully!");
+                        pfh.helpers.console.log("helpers/typeorm", "The connection to the database could be established successfully!");
                     }).catch((error: Error) => {
                         throw error;
                     });
@@ -35,7 +35,7 @@ class PFHHelpersHandlerTypeORMIndex {
                     throw error;
                 });
             } else {
-                pfh.helpers.console.error("helpers/utility", "The connection to the database is already running!");
+                pfh.helpers.console.error("helpers/typeorm", "The connection to the database is already running!");
             }
         } catch (error: any) {
             throw error;
