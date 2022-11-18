@@ -1,8 +1,14 @@
 import express from "express";
 import twig from "twig";
 
+import PFHHelpersIndex from "./pfh-helpers/helpers.index";
+
 class PFHIndex {
-    public constructor() {}
+    public helpers: PFHHelpersIndex;
+
+    public constructor() {
+        this.helpers = new PFHHelpersIndex();
+    }
 
     /**
      * To start the application
