@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     margin-left: 150px;
-    margin-right: 150px
+    margin-right: 150px;
 }
 
 .information-box-text {
@@ -46,4 +46,49 @@
     height: 500px;
     width: auto;
     border-radius: 10px;
+}
+
+.index-footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: auto;
+    width: auto;
+    background-color: @black;
+    color: @white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+}
+
+.index-footer ul {
+    list-style: none;
+}
+
+.index-footer h2 {
+    font-family: @font-family-header;
+    font-size: @font-size-header;
+}
+
+.index-footer a {
+    font-family: @font-family-text;
+    font-size: @font-size-text;
+    color: @white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.index-footer a:hover {
+    opacity: 0.5;
+    transition: 0.25s;
+}
+
+.index-footer p {
+    font-family: @font-family-text;
+    font-size: @font-size-text;
+    color: @white;
 }
